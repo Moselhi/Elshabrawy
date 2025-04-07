@@ -80,11 +80,27 @@ a{
     word-spacing: 5pxpx;
     letter-spacing: 2.5px;
     color: #d35400;
+
+}
+
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 .head-main p{
     color: #2c3e50 ;
-
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #555;
+    animation: typing 10s steps(118) 6;
+    max-width: fit-content;
+    padding-right: 8px;
 }
 
 .head-main span {
@@ -93,11 +109,13 @@ a{
 
 .head-main a{
     font-weight: 700;
-    display: inline-block;
+    display: block;
     background-color: #d35400;
     color: #fff;
     padding: 7px 10px;
     margin: 30px 0px;
+    width: fit-content;
+
 }
 
 .btn{
